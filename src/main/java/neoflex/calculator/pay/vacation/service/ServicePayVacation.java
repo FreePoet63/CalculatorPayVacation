@@ -15,7 +15,7 @@ public class ServicePayVacation {
         return resultPayVacation;
     }
 
-    public int daysBetweenTwoDate(String firstString, String secondString) {
+    private int daysBetweenTwoDate(String firstString, String secondString) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date firstDate = null;
         Date secondDate = null;
@@ -29,7 +29,7 @@ public class ServicePayVacation {
         return day;
     }
 
-    public double correctValue(String salary) {
+    private double correctValue(String salary) {
         double value = 0.0;
         try {
             value = Double.parseDouble(salary);
